@@ -1,0 +1,57 @@
+body{
+  font: 100 1em/150% "proxima-nova", Helvetica, sans-serif;
+  margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.wrapper{
+  max-width: 960px;
+  margin: 20px;
+  border: 1px solid red;
+}
+
+.header{
+  padding: 10px;
+  text-align: center;
+}
+
+.section{
+  border: 1px solid yellow;
+}
+
+
+
+/* FLEX */
+
+.row{
+  display: flex;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 8px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 8px;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
